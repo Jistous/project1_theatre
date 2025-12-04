@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const snowContainer = document.querySelector(".snow-layer");
   if (!snowContainer) return;
 
-  const flakes = 120;
+  const flakes = 60;
   const symbols = ["❄", "✻", "✼", "✥"];
 
   for (let i = 0; i < flakes; i++) {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     span.className = "snowflake";
     span.textContent = symbols[Math.floor(Math.random() * symbols.length)];
 
-    const size = 10 + Math.random() * 18;
+    const size = 10 + Math.random() * 10;
     const left = Math.random() * 100;
     const delay = Math.random() * 15;
     const duration = 12 + Math.random() * 18;

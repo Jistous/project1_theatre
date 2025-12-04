@@ -457,7 +457,7 @@ a {
   color: #ffffff;
   opacity: 0.85;
   will-change: transform, opacity;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: none;
   animation-name: snow-fall, snow-sway;
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
