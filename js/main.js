@@ -55,3 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.main-nav');
+
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open');
+    });
+
+  
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        burger.classList.remove('is-open');
+      });
+    });
+  }
+});
