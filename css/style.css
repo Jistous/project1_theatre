@@ -112,15 +112,6 @@ a {
 }
 
 
-.top-banner {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  margin-top: 64px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-}
 
 .banner-wrapper {
   position: relative;
@@ -129,45 +120,49 @@ a {
 
 .banner-image {
   width: 100%;
-  display: block;
   height: auto;
+  display: block;
 }
-
 
 .banner-hotspot {
   position: absolute;
   z-index: 50;
-  background: rgba(255,0,0,0);
   cursor: pointer;
-
-  left: calc(1200 / 1920 * 100%);
-  top: calc(2 / 1080 * 100%);
-  width: calc((1800 - 1500) / 1920 * 100%);
-  height: calc((125 - 40) / 1080 * 100%);
+  background: transparent; 
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
+
+  .banner-wrapper {
+    aspect-ratio: 720 / 1280;
+  }
+
   .banner-hotspot {
-    left: calc(750 /1050 * 100%);
+    left: calc(510 / 720 * 100%);
+    top: calc(2 / 1280 * 100%);
+    width: calc((700 - 500) / 720 * 100%);
+    height: calc((140 - 55) / 1500 * 100%);
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .banner-hotspot {
+    left: calc(750 / 1050 * 100%);
     top: calc(10 / 1400 * 100%);
     width: calc((965 - 700) / 1000 * 100%);
     height: calc((150 - 60) / 1400 * 100%);
   }
 }
 
-@media (max-width: 600px) {
+
+@media (min-width: 1024px) {
   .banner-hotspot {
-    left: 70.83%;
-    top: 0.15%;
-    width: 27.77%;
-    height: 6.64%;
-    aspect-ratio: 7290/1280;
-  }
-  .banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    left: calc(1200 / 1920 * 100%);
+    top: calc(2 / 1080 * 100%);
+    width: calc((1800 - 1500) / 1920 * 100%);
+    height: calc((125 - 40) / 1080 * 100%);
   }
 }
 
