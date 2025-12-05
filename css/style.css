@@ -133,7 +133,9 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 24px;
 }
+
 
 .hero-label {
   display: inline-flex;
@@ -588,19 +590,19 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
+  background: #fff;
   display: flex;
   justify-content: center;
-  background: #fff;
 }
 
 .banner-wrapper {
-  width: 100%;
-  max-width: 1920px;
-  border-radius: 0 0 32px 32px;
-  overflow: hidden;
   position: relative;
+  width: 100%;
+  max-width: 1120px;      /* как весь сайт */
+  overflow: hidden;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
-
 
 .banner-image {
   width: 100%;
@@ -609,18 +611,16 @@ a {
   object-fit: cover;
 }
 
-
 .banner-button {
   position: absolute;
+  z-index: 10;
   display: block;
   cursor: pointer;
-  z-index: 30;
 
-  top: 6%;
-  right: 6%;
-
-  width: 16%;
-  height: 8%;
+  top: 5%;
+  right: 5%;
+  width: 18%;
+  height: 9%;
 
   background: rgba(255, 255, 255, 0);
 }
