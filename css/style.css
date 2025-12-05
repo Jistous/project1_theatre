@@ -137,20 +137,29 @@ a {
   display: block;
   cursor: pointer;
 
-  top: 5.7%;
-  right: 6.2%;
-  width: 16.4%;
-  height: 7.8%;
+  top: 3.5%;
+  right: 6%;
+  width: 15%;
+  height: 9%;
 
   background: rgba(255, 255, 255, 0);
 }
 
+@media (max-width: 960px) {
+  .banner-button {
+    top: 5%;
+    right: 8%;
+    width: 25%;
+    height: 12%;
+  }
+}
+
 @media (max-width: 600px) {
   .banner-button {
-    top: 5.3%;
+    top: 7%;
     right: 6%;
-    width: 34%;
-    height: 11%;
+    width: 30%;
+    height: 14%;
   }
 }
 
@@ -409,4 +418,22 @@ a {
 #backToTop.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.logo-image {
+  height: auto;
+  width: 160px; 
+  max-width: 40vw;
+}
+
+@media (max-width: 960px) {
+  .logo-image {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-image {
+    width: 100px;
+  }
 }
