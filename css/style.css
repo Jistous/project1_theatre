@@ -47,11 +47,8 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
+.header-inner img {
+  flex-shrink: 0;
 }
 
 .logo {
@@ -133,41 +130,30 @@ a {
 
 .banner-button {
   position: absolute;
-  z-index: 50;
+  top: 3.7%;
+  right: 6.2%;
+  width: 15%;
+  height: 8.8%;
   cursor: pointer;
-
-  top: 4%;
-  right: 6%;
-
-  width: 180px;
-  height: 60px;
-
-  background: rgba(255, 255, 255, 0);
+  background: transparent;
+  z-index: 50;
 }
 
 @media (max-width: 960px) {
   .banner-button {
-    width: 150px;
-    height: 55px;
-    top: 6%;
-    right: 8%;
+    top: 5%;
+    right: 7.5%;
+    width: 22%;
+    height: 10.5%;
   }
 }
 
 @media (max-width: 600px) {
   .banner-button {
-    width: 130px;
-    height: 50px;
-    top: 7%;
+    top: 6.6%;
     right: 6%;
-  }
-}
-
-@media (max-width: 420px) {
-  .banner-button {
-    width: 120px;
-    height: 45px;
-    top: 8%;
+    width: 30%;
+    height: 12.5%;
   }
 }
 
@@ -376,11 +362,12 @@ a {
 
 
 .site-footer {
-  background: #0f2442;
-  color: #fff;
-  padding: 18px 0;
-  text-align: center;
-  font-size: 13px;
+  padding: 12px 0;
+}
+
+.footer-logo {
+  width: clamp(160px, 40vw, 260px);
+  margin: 0 auto;
 }
 
 
@@ -423,8 +410,9 @@ a {
 }
 
 .logo-image {
+  display: block;
+  width: clamp(110px, 10vw, 190px);
   height: auto;
-  width: clamp(100px, 12vw, 180px)
 }
 
 @media (max-width: 960px) {
