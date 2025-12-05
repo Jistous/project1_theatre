@@ -634,3 +634,16 @@ a {
   transform: translateY(-3px);
   box-shadow: 0px 10px 25px rgba(255, 120, 50, 0.5);
 }
+
+@media (min-width: 1024px) {
+  .story-image img {
+    width: 80%;
+    max-width: 420px; 
+    margin: 0 auto;
+    display: block;
+  }
+
+  .story-inner {
+    gap: 40px;
+  }
+}
